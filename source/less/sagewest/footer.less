@@ -1,0 +1,120 @@
+//    ____  _____ ____  _  _______ ___  ____  
+//   |  _ \| ____/ ___|| |/ /_   _/ _ \|  _ \ 
+//   | | | |  _| \___ \| ' /  | || | | | |_) |
+//   | |_| | |___ ___) | . \  | || |_| |  __/ 
+//   |____/|_____|____/|_|\_\ |_| \___/|_|    
+//                                            
+
+#desktop-footer{
+  height: 45px;
+  background: @off-black;
+
+  .container-fluid{
+
+    // padding-left: 35px;
+    // padding-right: 35px;
+
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  .desktop-footer-copywrite{
+    color: @white;
+    font-size: 14px;
+    line-height: 26px;
+
+    padding-top: 10px;
+  }
+
+} // #desktop-footer
+
+
+#desktop-social-container{
+  text-align: right;
+  padding-top: 9px;
+
+  ul{
+    font-size: 0px;
+
+    li{
+      .display-inline-block;
+      margin-left: 24px;
+
+      .fa{
+        color: @white;
+        font-size: 16px;
+        line-height: 26px;
+
+        .transition-in(0.3s);
+
+        &:focus,
+        &:hover{
+          color: @light-violet;
+        }
+
+
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 767px){
+  #desktop-footer{
+    .container-fluid{
+      padding-left: @container-mobile-padding;
+      padding-right: @container-mobile-padding;
+    }
+    .desktop-footer-copywrite{
+      font-size: 12px;
+    }
+  }
+}
+
+
+
+//    __  __  ___  ____ ___ _     _____
+//   |  \/  |/ _ \| __ )_ _| |   | ____|
+//   | |\/| | | | |  _ \| || |   |  _|
+//   | |  | | |_| | |_) | || |___| |___
+//   |_|  |_|\___/|____/___|_____|_____|
+//
+
+#mobile-footer{
+  height: 45px;
+  background: @violet;
+
+  .mobile-footer-hashtag{
+    .lato-italic;
+
+    color: @white;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 9px;
+    letter-spacing: 0.03em;
+  }
+}
+
+
+#mobile-social-container{
+  text-align: right;
+  padding-top: 9px;
+
+  ul{
+    font-size: 0px;
+
+    li{
+      .display-inline-block;
+      margin-left: 24px;
+
+      .fa{
+        color: @white !important;
+        font-size: 16px;
+        line-height: 26px;
+        .transition-none;
+
+      }
+    }
+  }
+}

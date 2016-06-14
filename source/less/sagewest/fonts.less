@@ -1,0 +1,88 @@
+//    _        _  _____ ___
+//   | |      / \|_   _/ _ \
+//   | |     / _ \ | || | | |
+//   | |___ / ___ \| || |_| |
+//   |_____/_/   \_\_| \___/
+//
+
+
+.lato-regular{
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.lato-light{
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.lato-italic{
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.lato-bold{
+  font-family: 'Lato', Verdana, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+// NEW PARAGRAPH STYLES
+// 
+//    ____ _______   ___     _____ ____  
+//   / ___|_   _\ \ / / |   | ____/ ___| 
+//   \___ \ | |  \ V /| |   |  _| \___ \ 
+//    ___) || |   | | | |___| |___ ___) |
+//   |____/ |_|   |_| |_____|_____|____/ 
+//                                       
+
+
+
+.body-font(@multiplier: 1){
+  .lato-regular;
+  font-size: 15px * @multiplier;
+  line-height: 26px * @multiplier;
+}
+.body-font-bold(@multiplier: 1){
+  .lato-bold;
+  font-size: 15px * @multiplier;
+  line-height: 26px * @multiplier;
+}
+
+
+
+
+.header-h1-style(@multiplier: 1){
+  .lato-bold;
+  font-size: 30px * @multiplier;
+  line-height: 39px * @multiplier;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.header-h3-style(@multiplier: 1){
+  .lato-italic;
+  font-size: 17px * @multiplier;
+  line-height: 26px * @multiplier;
+}
+.header-h4-style(@multiplier: 1){
+  .lato-bold;
+  font-size: 17px * @multiplier;
+  line-height: 26px * @multiplier;
+}
+
+
+
+
+
+
+.header-h6-style(@multiplier: 1){
+  .lato-bold;
+  font-size: 16px * @multiplier;
+  line-height: 26px * @multiplier;
+
+  text-transform: uppercase;
+  // letter-spacing: 0.075em;
+  letter-spacing: 0.1em;
+}
